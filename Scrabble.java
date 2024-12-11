@@ -108,11 +108,11 @@ public class Scrabble {
 				score += wordScore(input);
 				hand = MyString.remove(hand, input);
 				System.out.println(input + " earned " + wordScore(input) + " points. Score: " + score  +" points");
+				System.out.println();
 			}
 			else {
 				System.out.println("Invalid word. Try again.");
 			}
-			System.out.println();
 		}
 		if (hand.length() == 0) {
 	        System.out.println("Ran out of letters. Total score: " + score + " points");
