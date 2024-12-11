@@ -65,7 +65,7 @@ public class Scrabble {
 			score += SCRABBLE_LETTER_VALUES[word.charAt(i)-'a'];
 		}
 		score *= word.length();
-		if(word.contains("runi")) {
+		if(MyString.subsetOf("runi", word)) {
 			score += 1000;
 		}
 		if(word.length() == HAND_SIZE) {
@@ -152,7 +152,8 @@ public class Scrabble {
 		////testScrabbleScore();    
 		//testCreateHands();  
 		///testPlayHands();
-		playGame();
+		//playGame();
+		System.out.println(wordScore("running"));
 	}
 
 	public static void testBuildingTheDictionary() {

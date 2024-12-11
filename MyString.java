@@ -46,9 +46,10 @@ public class MyString {
             return false;
         }
        for(int i = 0; i<str1.length();i++){
-        if(countChar(str2, str1.charAt(i)) != countChar(str1, str1.charAt(i))) {
+        if(!str2.contains("" +str1.charAt(i))) {
             return false;
         }
+        str2 = str2.substring(0, str2.indexOf(str1.charAt(i))) + str2.substring(str2.indexOf(str1.charAt(i))+1,str2.length());
        }
        return true;
     }
