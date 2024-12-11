@@ -110,7 +110,7 @@ public class Scrabble {
 				System.out.println(input + " earned " + wordScore(input) + " points. Score: " + score  +" points");
 			}
 			else {
-				System.out.println("No such word in the dictionary. Try again.");
+				System.out.println("Invalid word. Try again.");
 			}
 			System.out.println();
 		}
@@ -153,7 +153,6 @@ public class Scrabble {
 		//testCreateHands();  
 		///testPlayHands();
 		//playGame();
-		System.out.println(wordScore("running"));
 	}
 
 	public static void testBuildingTheDictionary() {
